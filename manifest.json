@@ -1,7 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Scream to Unlock",
-    "description": "Blocks social media unless you scream 'I'm a loser'.",
+    "name": "Scream to Unlock: yell to unblock social media",
+    "description": "A productivity tool that blocks social media websites and makes you say embarrassing things to unlock them",
+    "author": "Pankaj Tanwar",
     "version": "1.0",
     "permissions": [
         "storage"
