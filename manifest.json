@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Scream to Unlock",
+    "description": "Blocks social media unless you scream 'I'm a loser'.",
+    "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*",
+        "*://*.twitter.com/*",
+        "*://*.x.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.facebook.com/*",
+                "*://*.instagram.com/*",
+                "*://*.twitter.com/*",
+                "*://*.x.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
