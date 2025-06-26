@@ -4,6 +4,10 @@ A Chrome extension that **blocks social media sites** (Facebook, Instagram, Twit
 
 Simply, A productivity tool that blocks websites and makes you say embarrassing things to unlock them.
 
+[![Hacker News](https://img.shields.io/badge/Hacker%20News-%231%20Trending-orange?logo=ycombinator)](https://news.ycombinator.com/item?id=44375761) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-donate-yellow)](https://buymeacoffee.com/the2ndfloorguy)
+
+> 💥 This project unexpectedly blew up on Reddit & HackerNews - cheers to the internet chaos gods 🧡
+
 ![Scream to Unlock Demo Image](./images/demo.png)
 
 ## What it does
