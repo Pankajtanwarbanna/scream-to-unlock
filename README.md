@@ -24,7 +24,7 @@ Yeah, it's weird.
 - Feedback based on how loud you were
 
 ## Coming Soon 🚀
-**Custom Website Blocking** - Add your own websites to block! This feature is currently in progress and has been submitted to the Chrome Web Store. It should be live in a couple of days. Refer to this PR - https://github.com/Pankajtanwarbanna/scream-to-unlock/pull/2
+**Custom Website Blocking** - Add your own websites to block! This feature is currently in progress and has been submitted to the Chrome Web Store. It should be live in a couple of days.
 
 ## Built with ❤️ by
 
