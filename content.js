@@ -1,5 +1,5 @@
 (async () => {
-    const { unlockUntil } = await chrome.storage.local.get("unlockUntil");
+    const { unlockUntil } = await chrome.storage.sync.get("unlockUntil");
     const now = Date.now();
 
     if (unlockUntil && now < unlockUntil) return;
@@ -755,7 +755,7 @@
                     // Create enhanced unlock screen
                     await showUnlockSuccess(seconds, avgVolume);
 
-                    await chrome.storage.local.set({ unlockUntil: Date.now() + seconds * 1000 });
+                    await chrome.storage.sync.set({ unlockUntil: Date.now() + seconds * 1000 });
                     stream.getTracks().forEach(track => track.stop());
 
                     setTimeout(() => {
