@@ -18,13 +18,11 @@ Yeah, it's weird.
 ## Features
 
 - Blocks websites with a fancy lock screen
+- Add your own websites to block also
 - Voice recognition to detect the unlock phrase
 - Volume-based unlock timer - speak louder for more time
 - Real-time audio visualizer with waves and volume bars
 - Feedback based on how loud you were
-
-## Coming Soon 🚀
-**Custom Website Blocking** - Add your own websites to block! This feature is currently in progress and has been submitted to the Chrome Web Store. It should be live in a couple of days.
 
 ## Built with ❤️ by
 
