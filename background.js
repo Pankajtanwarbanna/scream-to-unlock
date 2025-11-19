@@ -12,13 +12,25 @@ chrome.runtime.onInstalled.addListener(async () => {
     }
 });
 
+function isWebsiteBlocked(url, blockedWebsites) {
+    try {
+        const urlObj = new URL(url);
+        const hostname = urlObj.hostname;
+
+        return blockedWebsites.some(website => {
+            const cleanWebsite = website.replace(/^https?:\/\//, '');
+            console.log({ cleanWebsite, hostname, urlObj })
+            return hostname === cleanWebsite || hostname.endsWith('.' + cleanWebsite);
+        });
+    } catch (e) {
+        return false;
+    }
+}
+
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     if (changeInfo.status === 'complete' && tab.url) {
         const { blockedWebsites = [] } = await chrome.storage.sync.get('blockedWebsites');
-
-        const shouldBlock = blockedWebsites.some(website =>
-            tab.url.includes(website)
-        );
+        const shouldBlock = isWebsiteBlocked(tab.url, blockedWebsites);
 
         if (shouldBlock) {
             chrome.scripting.executeScript({
